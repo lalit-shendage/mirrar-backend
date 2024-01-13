@@ -44,18 +44,23 @@ npm start
 
 Create a new product.
 
-**Request:**
+**Request {body}:**
 ```json
 {
   "name": "Product Name",
   "description": "Product Description",
-  "price": 29.99,
+  "price": 29.99, //product price  in number 
   "variants": [
     {
       "name": "Variant 1",
       "sku": "ABC123",
-      "additionalCost": 5.99,
-      "stockCount": 100
+      "additionalCost": 5.99, //varient price  in number 
+      "stockCount": 100 //varient count  in number 
     }
   ]
 }
+
+### Get all Products
+
+**Endpoint:** `GET /products`
+
