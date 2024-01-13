@@ -45,17 +45,19 @@ npm start
 Create a new product.
 
 **Request {body}:**
+
 ```json
+// sample data 
 {
   "name": "Product Name",
   "description": "Product Description",
-  "price": 29.99, //product price  in number 
+  "price": 2999, 
   "variants": [
     {
       "name": "Variant 1",
       "sku": "ABC123",
-      "additionalCost": 5.99, //varient price  in number 
-      "stockCount": 100 //varient count  in number 
+      "additionalCost": 599,  
+      "stockCount": 100 
     }
   ]
 }
@@ -79,17 +81,18 @@ Retrieve a Product by its id.
 
 Update details of a specific product.
 
-**Request:**
+**Request{body}:**
 ```json
+// sample data 
 {
   "name": "Updated Product Name",
   "description": "Updated Product Description",
-  "price": 39.99,
+  "price": 3999,
   "variants": [
     {
       "name": "Updated Variant",
       "sku": "XYZ789",
-      "additionalCost": 8.99,
+      "additionalCost": 899,
       "stockCount": 150
     }
   ]
